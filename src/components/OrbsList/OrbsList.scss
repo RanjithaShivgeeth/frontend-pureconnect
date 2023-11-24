@@ -1,0 +1,48 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.videoTitle {
+  color: $primary-silver;
+  margin-left: 1rem;
+  &__list {
+    list-style-type: none;
+  }
+}
+ul {
+  border-left: 1px solid $primary-silver;
+}
+.videos__list {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @include tablet {
+    width: 35%;
+  }
+  @include desktop {
+    display: flex;
+    min-width: 30vw;
+    padding-left: 1px;
+  }
+
+  img {
+    width: 9rem;
+    height: 6rem;
+    border-radius: 5px;
+  }
+
+  .videos__nameTitle--head {
+    font-size: 1rem;
+    color: $primary-black;
+  }
+
+  .videos__nameTitle--channel {
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+}
+
+.video__list {
+  border-bottom: 1px solid black;
+}

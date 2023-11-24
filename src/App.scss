@@ -1,0 +1,13 @@
+@use './styles/partials/variables' as *;
+@use './styles/partials/mixins' as *;
+@use './styles/partials/font' as *;
+
+body {
+    margin: 0;
+}
+
+.App {
+    font-family: Titillium Web;
+}
+
+

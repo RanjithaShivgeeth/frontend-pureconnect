@@ -1,0 +1,115 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Warehouse__header {
+  line-height: 36px;
+  font-size: 228px;
+  color: $primary-Instock_Black;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.AddWarehouse__title {
+  color: $primary-Instock_Black;
+  font-family: Titillium Web;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.Warehouse {
+  &____name,
+  &__address,
+  &__city,
+  &__country {
+    color: $primary-Instock_Black;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  &____name1,
+  &__address1,
+  &__city1,
+  &__country1 {
+    color: $secondary-Slate;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+.AddContact__title {
+  color: $primary-Instock_Black;
+  font-family: Titillium Web;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.Contact {
+  &__name,
+  &__position,
+  &__phonenumber,
+  &__email {
+    color: $primary-Instock_Black;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  &__name1,
+  &__position1,
+  &__phonenumber1,
+  &__email1 {
+    color: $secondary-Slate;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+.addwarehouse {
+  &__cancel {
+    color: $secondary-Slate;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-flex;
+    padding: 8px 51px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid $secondary-Cloud;
+    background: $primary-White;
+  }
+  &__btn--icon {
+    color: $primary-White;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-flex;
+    padding: 8px 21px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #f4991a;
+  }
+}

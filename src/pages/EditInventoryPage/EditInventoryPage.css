@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.backgroundcolor {
+  background-color: #f7f8f9;
+}
+
+.pagebackground {
+  position: relative;
+  top: -68px;
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 100%;
+  z-index: 999;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 0px rgba(19, 24, 44, 0.1);
+}
+@media (min-width: 768px) {
+  .pagebackground {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+.inventory__heading {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+@media (min-width: 1279px) {
+  .inventory__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.inventory__arrowicon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 0;
+}
+
+.inventory__header {
+  line-height: 36px;
+  font-size: 28px;
+  color: #13182c;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Titillium Web;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1279px) {
+  .inventory__header {
+    padding-left: 32px;
+  }
+}
+
+.WarehouseDetails {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+}
+@media (min-width: 1279px) {
+  .WarehouseDetails {
+    padding-left: 40px;
+  }
+}
+
+.inventory__title {
+  color: #13182c;
+  font-family: Titillium Web;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+@media (min-width: 1279px) {
+  .pagebackground__container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+.Warehouse__divider {
+  height: 1px;
+  background-color: #bdc5d5;
+  position: relative;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1279px) {
+  .Warehouse__divider2 {
+    width: 2px;
+    background-color: #bdc5d5;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+}
+.Warehouse__form {
+  display: flex;
+  flex-direction: column;
+}
+.Warehouse__name, .Warehouse__address, .Warehouse__city, .Warehouse__country {
+  color: #13182c;
+  font-family: Titillium Web;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.Warehouse--label {
+  padding-top: 16px;
+}
+.Warehouse--text {
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #bdc5d5;
+  width: 100%;
+  height: 36px;
+}
+.Warehouse__name1, .Warehouse__address1, .Warehouse__city1, .Warehouse__country1 {
+  color: #5c667e;
+  font-family: Titillium Web;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.ContactDetails {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media (min-width: 1279px) {
+  .ContactDetails {
+    padding-right: 40px;
+  }
+}
+
+.AddContact__title {
+  color: #13182c;
+  font-family: Titillium Web;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.Contact__name, .Contact__position, .Contact__phonenumber, .Contact__email {
+  color: #13182c;
+  font-family: Titillium Web;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.Contact__name1, .Contact__position1, .Contact__phonenumber1, .Contact__email1 {
+  color: #5c667e;
+  font-family: Titillium Web;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.addwarehouse {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  gap: 10px;
+  border-radius: 0px 0px 3px 3px;
+  background-color: #f7f8f9;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  justify-content: center;
+}
+@media (min-width: 1279px) {
+  .addwarehouse {
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 40px;
+  }
+}
+.addwarehouse--button {
+  color: #5c667e;
+  font-family: Titillium Web;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  display: inline-flex;
+  padding: 8px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #bdc5d5;
+  background: #ffffff;
+  width: 100%;
+}
+@media (min-width: 1279px) {
+  .addwarehouse--button {
+    width: 10%;
+  }
+}
+
+.addwarehouse__btn {
+  color: #ffffff;
+  background: #f4991a;
+}/*# sourceMappingURL=EditInventoryPage.css.map */

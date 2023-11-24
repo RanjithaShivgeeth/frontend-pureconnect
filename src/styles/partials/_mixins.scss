@@ -1,0 +1,139 @@
+@use "./variables" as *;
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1279px) {
+    @content;
+  }
+}
+@mixin mobileHeader {
+  font-size: 28px;
+  line-height: 36px;
+}
+@mixin mobileSubHeader {
+  font-size: 20px;
+  line-height: 28px;
+}
+@mixin mobileLabelLinksButtons {
+  font-size: 13px;
+  line-height: 20px;
+}
+@mixin mobileTableHeader {
+  font-size: 11px;
+  line-height: 16px;
+}
+
+@mixin mobileBodyLarge {
+  font-size: 15px;
+  line-height: 26px;
+}
+@mixin mobileBodyMedium {
+  font-size: 13px;
+  line-height: 20px;
+}
+@mixin mobileBodyLarge {
+  font-size: 11px;
+  line-height: 16px;
+}
+
+//  DESCKTOP AND TABLET
+
+@mixin desktoptabHeader {
+  font-size: 32px;
+  line-height: 40px;
+}
+@mixin desktoptabSubHeader {
+  font-size: 24px;
+  line-height: 32px;
+}
+@mixin desktoptabLabelLinksButtons {
+  font-size: 14px;
+  line-height: 22px;
+}
+@mixin desktoptabTableHeader {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@mixin desktoptabBodyLarge {
+  font-size: 16px;
+  line-height: 28px;
+}
+@mixin desktoptabBodyMedium {
+  font-size: 14px;
+  line-height: 22px;
+}
+@mixin desktoptabBodyLarge {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1279px) {
+    @content;
+  }
+}
+@mixin mobileHeader {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+@mixin mobileSectionHeader {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+}
+@mixin mobileSubheader {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+@mixin mobileBodyCopy {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+@mixin mobileLabelButtons {
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+//  DESCKTOP AND TABLET
+@mixin tabdeskHeader {
+  font-size: 33px;
+  line-height: 44px;
+  font-weight: 700;
+}
+@mixin tabdeskSectionHeader {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+}
+@mixin tabdeskSubHeader {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+}
+@mixin tabdeskBodyCopy {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+@mixin tabdeskLabelsButtons {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+}

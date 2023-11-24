@@ -1,0 +1,143 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.Web {
+  margin: 1rem;
+  background-color: #107433;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__logo {
+    text-align: center;
+
+    &--header {
+      color: #ffffff;
+      width: 120px;
+      height: 25px;
+    }
+  }
+  .header__optionwrap {
+    display: flex;
+    flex-direction: row;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px;
+    justify-content: space-evenly;
+  }
+  @media (min-width: 768px) {
+    .header__optionwrap {
+      flex-direction: row;
+      margin-right: 32px;
+      margin-top: 32px;
+    }
+  }
+  .header__option {
+    border-radius: 20px;
+    width: 140px;
+    height: 32px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+  }
+  @media (min-width: 768px) {
+    .header__option {
+      width: 107px;
+      height: 38px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+
+  &__searchBar {
+    display: flex;
+    justify-content: space-around;
+    @include tablet {
+      display: flex;
+
+      gap: 30px;
+    }
+
+    &--inputField {
+      position: relative;
+    }
+
+    &--input {
+      padding: 1rem;
+      border-radius: 5px;
+      border: 2px solid $primary-silver;
+    }
+
+    &--icons {
+      position: absolute;
+      left: 2rem;
+      top: 5.3rem;
+    }
+
+    &--btn {
+      display: none;
+      @include tablet {
+        // background: $primary-blue;
+        padding: 0.625rem;
+        border-radius: 5px;
+        width: 15rem;
+        font-size: 1.2rem;
+        color: $primary-white;
+        border: none;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &--uploadButtonicon {
+    }
+
+    &--image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+
+      @include tablet {
+        float: left;
+      }
+    }
+  }
+  .Web__button {
+    position: relative;
+  }
+  .Web__uploadButton {
+    color: #107433;
+    background: $primary-white;
+    padding: 0.625rem;
+    border-radius: 5px;
+    width: 90%;
+    margin: 1rem;
+    border: none;
+    @include tablet {
+      display: none;
+    }
+
+    .Web__mobile--uploadButtonicon {
+      position: absolute;
+      left: 2rem;
+      bottom: 4.2rem;
+    }
+  }
+
+  .Web {
+    @include desktop {
+      display: flex;
+    }
+  }
+}

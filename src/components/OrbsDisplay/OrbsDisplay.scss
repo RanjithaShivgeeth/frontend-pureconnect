@@ -1,0 +1,147 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "AvenirNext LT Pro", sans-serif;
+}
+
+.selectedvideo {
+  max-width: 100%;
+}
+
+.selectedvideoList {
+  @include desktop {
+    display: flex;
+  }
+  &__section {
+    @include desktop {
+      max-width: 65vw;
+    }
+  }
+}
+
+.selectedvideoListHeading {
+  @include mobileHeader;
+  margin: 1rem;
+  color: $primary-black;
+}
+.videoplayer {
+  display: flex;
+  justify-content: space-around;
+
+  &__detail {
+    @include tablet {
+      display: flex;
+      gap: 30px;
+      margin-left: 0%;
+    }
+
+    &__date {
+      color: $primary-black;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    &--bydate {
+      color: $primary-silver;
+      font-weight: 100;
+    }
+  }
+  &__Like {
+    @include tablet {
+      display: flex;
+      gap: 30px;
+    }
+    color: $primary-silver;
+    font-size: 1rem;
+  }
+}
+
+.description {
+  color: $primary-black;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 1rem;
+}
+.comment {
+  color: $secondary-black;
+  @include mobileSubheader;
+  margin: 1rem;
+}
+
+.heading {
+  color: $primary-silver;
+  margin-left: 5rem;
+  @include mobileBodyCopy;
+}
+
+.form {
+  &__section {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    img {
+      margin-top: 2rem;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      @include tablet {
+        margin-top: 0;
+      }
+    }
+  }
+  &__section2 {
+    @include tablet {
+      display: flex;
+      gap: 30px;
+    }
+    &--comment {
+      height: 6rem;
+      width: 13rem;
+      border-color: $primary-silver;
+      border-radius: 5px;
+      border-bottom: 1px solid black;
+      @include tablet {
+        display: flex;
+        height: 2.8rem;
+        width: 17rem;
+      }
+    }
+    .form__section3 {
+      position: relative;
+    }
+    button {
+      padding: 1rem;
+      color: $primary-white;
+      background-color: brown;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+    }
+  }
+  &--icon {
+    position: absolute;
+    left: 8px;
+    bottom: 10px;
+  }
+}
+
+.selectedvideoListHeading {
+  border-bottom: 1px solid black;
+}
+
+.commentSection__namedate {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}

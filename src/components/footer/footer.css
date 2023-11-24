@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  background-color: #107433;
+  color: #ffffff;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .footer__headingicon {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin-left: 3rem;
+  }
+}
+.footer__header {
+  font-size: 60px;
+  line-height: 68px;
+  font-weight: 100;
+  padding: 16 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-family: "Titillium Web";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+  padding-bottom: 36px;
+}
+@media (min-width: 768px) {
+  .footer-copyright {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 1279px) {
+  .footer-copyright {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,217 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.warehouse {
+  &__hyperlink {
+    text-decoration: none;
+    display: flex;
+  }
+  &__righticon {
+    width: 20px;
+    height: 20px;
+  }
+  &__listicons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    padding-right: 40px;
+
+    @include tablet {
+      width: 100px;
+    }
+
+    @include desktop {
+      margin-right: 80px;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: $primary-Instock_Black;
+    margin: 0;
+    margin-top: 24px;
+    padding-bottom: 24px;
+  }
+  &__listoptions {
+    border-top: 1px solid $secondary-Cloud;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__listoptionswrap {
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @include tablet {
+      justify-content: flex-start;
+    }
+  }
+  &__mobileleft {
+    width: 50%;
+
+    @include tablet {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__mobileright {
+    width: 50%;
+    @include tablet {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      padding-left: 40px;
+      padding-left: 0;
+    }
+  }
+  &__listtitle {
+    padding-bottom: 4px;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    color: $secondary-Slate;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__nameoption {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+  }
+  &__namegroup {
+    margin-bottom: 16px;
+    color: #f4991a;
+    padding-right: 32px;
+
+    @include tablet {
+      width: 120px;
+    }
+    @include desktop {
+      width: 180px;
+    }
+  }
+  &__contactnamegroup {
+    margin-bottom: 16px;
+    padding-right: 32px;
+
+    @include tablet {
+      width: 120px;
+    }
+    @include desktop {
+      width: 180px;
+    }
+  }
+  &__addressgroup {
+    padding-right: 32px;
+
+    @include tablet {
+      width: 120px;
+    }
+    @include desktop {
+      width: 180px;
+    }
+  }
+  &__contactinfogroup {
+    padding-bottom: 16px;
+
+    @include tablet {
+      width: 140px;
+    }
+    @include desktop {
+      width: 150px;
+    }
+  }
+  &__button {
+    background: none;
+    border: none;
+  }
+  &__desktoptitle {
+    display: none;
+
+    @include tablet {
+      margin-top: 24px;
+      padding-left: 24px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(247, 248, 249, 0.7);
+      color: #5c667e;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18px;
+      justify-content: space-between;
+    }
+  }
+  &__desktoptitlewrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__desktoptitleoption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    width: 120px;
+    justify-content: flex-start;
+
+    @include desktop {
+      width: 180px;
+    }
+  }
+  &__sorticon {
+    padding-left: 4px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.warehouse__deleteicon {
+  cursor: pointer;
+}
+.warehouse--red {
+  background-color: rgba(201, 69, 21, 0.07);
+  border-radius: 20px;
+  padding: 4px 8px 4px;
+  color: #c94515;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: 86px;
+  text-align: center;
+}
+.warehouse--green {
+  border-radius: 20px;
+  background: rgba(21, 132, 99, 0.07);
+  padding: 4px 8px 4px;
+  color: #158463;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: 61px;
+  text-align: center;
+}

@@ -1,0 +1,91 @@
+.backgroundcolor {
+  background-color: #f7f8f9;
+}
+
+.pagebackground {
+  position: relative;
+  top: -68px;
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 100%;
+  z-index: 999;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 0px rgba(19, 24, 44, 0.1);
+}
+@media (min-width: 768px) {
+  .pagebackground {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .warehousetop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.warehousetop__title {
+  padding-top: 32px;
+  padding-left: 24px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+.warehousetop__searchbar {
+  border: 1px solid #BDC5D5;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 16px;
+  padding: 6px 16px 6px 16px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .warehousetop__searchbar {
+    align-items: center;
+    height: 36px;
+    margin-right: 0;
+  }
+}
+.warehousetop__searchinput {
+  border: none;
+}
+.warehousetop__searchicon {
+  width: 20px;
+  height: 20px;
+}
+@media (min-width: 768px) {
+  .warehousetop__searchicon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.warehousetop__addbutton {
+  width: -webkit-fill-available;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 16px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 20px;
+  background-color: #2E66E5;
+  border-color: #2E66E5;
+  border-style: none;
+  color: white;
+}
+@media (min-width: 768px) {
+  .warehousetop__addbutton {
+    height: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .warehousetop__tabletright {
+    display: flex;
+    padding-top: 8px;
+  }
+}/*# sourceMappingURL=InventoryListPage.css.map */

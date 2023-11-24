@@ -1,0 +1,105 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.modal{
+ &::before{
+    @include tablet{
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(1, 1, 1, 0.5);
+    backdrop-filter: blur(3px);
+  }
+}
+&-wrapper{
+  position: relative;
+    font-family: 'Titillium Web';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-White;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    overflow-y: hidden;
+    z-index: 1000;
+    @include tablet{
+        position: fixed; 
+        top: 46%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        width: 604px;
+        height: 300px; 
+        background-color: $primary-White; 
+        overflow-x: hidden;
+        padding:1rem;
+    }
+  }
+}
+  
+  .modal-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    &--stylemod{
+        background-color: $primary-White;
+        border: none;
+    }
+  }
+  
+  .modal-body {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  
+  .modal-buttons {
+    width: 70%;
+    margin: 1rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-around;
+    gap:1rem;
+    @include tablet{
+      width: 100%;
+      justify-content: flex-end;
+    }
+   
+  }
+  
+  .modal-buttons__cancel{
+    &--stylemod{
+        border: none;
+        border-radius: 20px;
+        background-color: $primary-White;
+        padding: 8px 50px;
+        border: 1px solid #BDC5D5;
+    }
+    @include tablet{
+      
+    
+    }
+  }
+  .modal-buttons__delete {
+    &--stylemod{
+        border: none;
+        border-radius: 20px;
+        background:  #C94515;    
+        padding: 8px 50px;        
+    }
+    @include tablet{
+      
+    }
+  }
+  

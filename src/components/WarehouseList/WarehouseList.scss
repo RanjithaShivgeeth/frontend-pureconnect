@@ -1,0 +1,191 @@
+// @use '../../styles/partials/mixins' as *;
+// @use '../../styles/partials/variables' as *;
+
+
+// .warehouse {
+//     &__righticon{
+//         width: 20px;
+//         height: 20px;
+//     }
+//     &__listicons {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         margin-left: 24px;
+//         margin-right: 24px;
+//         margin-top: 16px;
+//         margin-bottom: 24px;
+
+//         @include tablet {
+//           position: relative;
+//           left: -20px;
+//           align-items: center;
+//           width: 60px;
+//         }
+//         @include desktop {
+//           padding-right: 30px;
+//           position: relative;
+//           left: -40px;
+//           width: 100px;
+//         }
+//       }
+//     &__list {
+//         list-style: none;
+//         padding-left: 0;
+//         font-size: 13px;
+//         font-style: normal;
+//         font-weight: 400;
+//         line-height: 20px;
+//         color: $primary-Instock_Black;
+//         margin: 0;
+//         margin-top: 24px;
+//         padding-bottom: 24px;
+//       }
+//     &__listoptions {
+//         border-top: 1px solid $secondary-Cloud;
+        
+//         @include tablet {
+//           display: flex;
+//           flex-direction: row;
+//           justify-content: space-between;
+//         }
+//       }
+//     &__listoptionswrap {
+//         margin-top: 16px;
+//         margin-left: 24px;
+//         margin-right: 24px;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+        
+//         @include tablet {
+//           justify-content: flex-start;
+//         }
+//       }
+//     &__mobileleft {
+//         width: 120px;
+
+//         @include tablet {
+//           width: auto;
+//           display: flex;
+//           flex-direction: row;
+//         }
+//     }
+//     &__mobileright {
+//       @include tablet {
+//         display: flex;
+//         flex-direction: row;
+//         padding-left: 40px;
+//         padding-left: 0;
+//       }
+//     }
+//     &__listtitle {
+//         padding-bottom: 4px;
+//         font-size: 11px;
+//         font-style: normal;
+//         font-weight: 600;
+//         line-height: 16px;
+//         color: $secondary-Slate;
+
+//         @include tablet {
+//           display: none;
+//         }
+//     }
+//     &__nameoption {
+//         display: flex;
+//         flex-direction: row;
+//         width: 120px;
+//     }
+//     &__namegroup {
+//         margin-bottom: 16px;
+//         color: $primary-Instock_Indigo;
+//         padding-right: 32px;
+
+//         @include tablet {
+//           width: 100px;
+//           padding-right: 30px;
+//         }
+//         @include desktop {
+//           width: 150px;
+//         }
+//     }
+//     &__contactnamegroup {
+//         margin-bottom: 16px;
+//         padding-right: 32px;
+
+//         @include tablet {
+//           width: 100px;
+//           padding-right: 30px;
+//         }
+//         @include desktop {
+//           width: 150px;
+//         }
+//     }
+//     &__addressgroup {
+//       padding-right: 32px;
+
+//       @include tablet {
+//         width: 100px;
+//         padding-right: 30px;
+//       }
+//       @include desktop {
+//         width: 150px;
+//       }
+//     }
+//     &__contactinfogroup {
+//       padding-bottom: 16px;
+
+//       @include tablet {
+//         width: 150px;
+//         padding-right: 20px;
+//       }
+//       @include desktop {
+//         width: 150px;
+//       }
+//     }
+//     &__button {
+//       background: none;
+//       border: none;
+//     }
+//     &__desktoptitle {
+//       display: none;
+
+//       @include tablet {
+//         margin-top: 24px;
+//         padding-left: 24px;
+//         width: 100%;
+//         display:flex;
+//         flex-direction: row;
+//         background-color: rgba(247, 248, 249, 0.70);
+//         color: #5C667E;
+//         font-size: 12px;
+//         font-style: normal;
+//         font-weight: 600;
+//         line-height: 18px;
+//         justify-content: space-between;
+//       }
+//     }
+//     &__desktoptitlewrap {
+//       display: flex;
+//       flex-direction: row;
+//     }
+
+//     &__desktoptitleoption {
+//       display: flex;
+//       flex-direction: row;
+//       align-items: center;
+//       align-items: center;
+//       width: 100px;
+//       padding-right: 30px;
+//       justify-content: flex-start;
+
+//       @include desktop {
+//         width: 150px;
+//       }
+//     }
+//     &__sorticon {
+//       padding-left: 4px;
+//       width: 20px;
+//       height: 20px;
+//     }
+//     }
