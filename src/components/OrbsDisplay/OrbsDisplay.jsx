@@ -28,7 +28,7 @@ function OrbsDisplay({ selectedVideos }) {
 
               <p className="video__Like--like">
                 <img
-                  src={`${process.env.REACT_APP_API_URL}/${selectedVideos.views}`}
+                  src={`${process.env.REACT_APP_API_URL}/${selectedVideos.likes}`}
                   alt={selectedVideos.likes}
                 />
               </p>

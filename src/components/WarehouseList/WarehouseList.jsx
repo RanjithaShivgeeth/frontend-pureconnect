@@ -13,9 +13,8 @@ function WarehouseList({ sortOrder, sortColumn }) {
 
   useEffect(() => {
     async function getWarehouses() {
-      const data = await axios.get(
-        "https://instock-team-2-api.fly.dev/warehouses"
-      );
+      const data = await axios.get("http://localhost:8080/farmhouse");
+      console.log(data);
       setWarehousesData(data.data);
     }
     getWarehouses();
@@ -76,8 +75,9 @@ function WarehouseList({ sortOrder, sortColumn }) {
                       className="warehouse__hyperlink"
                       to={"/warehouses/" + warehouse.id}
                     >
-                      {warehouse.warehouse_name}
+                      {warehouse.farmhouse}
                     </Link>
+
                     <img
                       src={rightIcon}
                       className="warehouse__righticon"
@@ -97,7 +97,7 @@ function WarehouseList({ sortOrder, sortColumn }) {
                 <div className="warehouse__contactnamegroup">
                   <div className="warehouse__listtitle">CONTACT NAME</div>
                   <div className="warehouse__contactnameoption">
-                    {warehouse.contact_name}
+                    {warehouse.name}
                   </div>
                 </div>
                 <div className="warehouse__contactinfogroup">
@@ -105,8 +105,8 @@ function WarehouseList({ sortOrder, sortColumn }) {
                     CONTACT INFORMATION
                   </div>
                   <div className="warehouse__contactinfooption">
-                    {warehouse.contact_phone}{" "}
-                    <div> {warehouse.contact_email}</div>
+                    {/* {warehouse.contact_phone}{" "} */}
+                    <div> {warehouse.info}</div>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@ function WarehouseList({ sortOrder, sortColumn }) {
                   className="warehouse__deleteicon"
                 ></img>
               </button>
-              <Link
+              {/* <Link
                 className="warehouse__button"
                 to={"/warehouses/edit/" + warehouse.id}
               >
@@ -131,7 +131,7 @@ function WarehouseList({ sortOrder, sortColumn }) {
                   alt="edit icon"
                   className="warehouse__editicon"
                 ></img>
-              </Link>
+              </Link> */}
             </div>
           </li>
         ))}

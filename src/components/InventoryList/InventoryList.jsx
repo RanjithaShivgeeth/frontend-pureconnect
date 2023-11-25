@@ -52,9 +52,7 @@ function InventoryList({ inventoriesData, setInventoriesData }) {
   const handleDelete = async () => {
     if (selectedItem) {
       try {
-        await axios.delete(
-          "https://instock-team-2-api.fly.dev/inventories/" + selectedItem.id
-        );
+        await axios.delete("http://localhost:8080/products" + selectedItem.id);
         const updatedItems = inventoriesData.filter((inventoryItem) => {
           return inventoryItem.id !== selectedItem.id;
         });
@@ -82,7 +80,7 @@ function InventoryList({ inventoriesData, setInventoriesData }) {
                         className="warehouse__hyperlink"
                         to={"/inventory/" + inventory.id}
                       >
-                        {inventory.name}
+                        {inventory.orbs}
                         <img
                           src={rightIcon}
                           className="warehouse__righticon"
@@ -111,9 +109,9 @@ function InventoryList({ inventoriesData, setInventoriesData }) {
                     </div>
                   </div>
                   <div className="warehouse__contactinfogroup">
-                    <div className="warehouse__listtitle">PRICE</div>
+                    <div className="warehouse__listtitle">QTY</div>
                     <div className="warehouse__contactinfooption">
-                      {inventory.price}
+                      {inventory.quantity}
                     </div>
                   </div>
                   <div className="warehouse__warehousename">

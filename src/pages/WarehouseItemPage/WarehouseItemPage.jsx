@@ -15,7 +15,7 @@ function WarehouseItemPage() {
   useEffect(() => {
     async function getWarehouse() {
       const data = await axios.get(
-        "https://instock-team-2-api.fly.dev/warehouses/" + params.id
+        "http://localhost:8080/farmhouse/" + params.id
       );
       console.log(data.data);
       setWarehouseData(data.data);
@@ -27,9 +27,7 @@ function WarehouseItemPage() {
       <HeaderNav />
       <div className="pagebackground">
         <div className="warehousetop">
-          <div className="warehousetop__title">
-            {warehouseData.warehouse_name}
-          </div>
+          <div className="warehousetop__title">{warehouseData.farmhouse}</div>
           <div className="warehousetop__tabletright">
             <div className="warehousetop__searchbar">
               <input

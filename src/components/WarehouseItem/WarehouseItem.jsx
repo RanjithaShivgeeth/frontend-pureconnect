@@ -22,9 +22,7 @@ function WarehouseItem({ warehouseData }) {
   useEffect(() => {
     async function getInventories() {
       const data = await axios.get(
-        "https://instock-team-2-api.fly.dev/warehouses/" +
-          params.id +
-          "/inventories"
+        "http://localhost:8080/farmhouse/" + params.id + "/products"
       );
       console.log("called Inventory Item");
       setInventoryData(data.data);
@@ -47,9 +45,7 @@ function WarehouseItem({ warehouseData }) {
 
   const handleDelete = async () => {
     if (selectedItem) {
-      axios.delete(
-        "https://instock-team-2-api.fly.dev/inventories/" + selectedItem.id
-      );
+      axios.delete("http://localhost:8080/products/" + selectedItem.id);
       const updatedItems = inventoryData.filter((inventoryItem) => {
         return inventoryItem.id !== selectedItem.id;
       });

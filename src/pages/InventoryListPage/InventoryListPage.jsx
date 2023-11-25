@@ -24,9 +24,7 @@ function InventoryListPage() {
 
   useEffect(() => {
     async function getInventoriesData() {
-      const data = await axios.get(
-        "https://instock-team-2-api.fly.dev/inventories/"
-      );
+      const data = await axios.get("http://localhost:8080/products");
       const sortedData = data.data.slice().sort((a, b) => {
         const valueA = a[sortColumn];
         const valueB = b[sortColumn];

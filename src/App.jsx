@@ -20,7 +20,7 @@ function App() {
         {/* <HeaderNav /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/videos/:id" element={<HomePage />} />
+          <Route path="/videos/:id" element={<OrbsListingPage />} />
           <Route path="/Orbs" element={<OrbsListingPage />} />
           <Route path="/upload" element={<UploadOrbsPage />} />
           <Route path="/warehouses" element={<WarehouseListPage />} />

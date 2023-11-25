@@ -18,12 +18,12 @@ function InventoryItemPage() {
   useEffect(() => {
     async function getInventoriesData() {
       const data = await axios.get(
-        "https://instock-team-2-api.fly.dev/inventories/" + params.id
+        "http://localhost:8080/products/" + params.id
       );
       setInventoryItemData(data.data);
+      console.log(data.data);
       let secondData = await axios.get(
-        "https://instock-team-2-api.fly.dev/warehouses/" +
-          data.data.warehouse_id
+        "http://localhost:8080/farmhouse/" + data.data.farmhouse_id
       );
       setParentData(secondData.data);
       console.log(secondData.data);
@@ -48,9 +48,7 @@ function InventoryItemPage() {
                   alt="arrowIcon"
                 />
               </Link>
-              <h1 className="inventoryitem__title">
-                {inventoryItemData.item_name}
-              </h1>
+              <h1 className="inventoryitem__title">{inventoryItemData.orbs}</h1>
             </div>
             <Link
               to={"/inventory/edit/" + inventoryItemData.id}
@@ -71,9 +69,7 @@ function InventoryItemPage() {
             <div className="inventoryitem__details1">
               <div className="inventoryitem__description">
                 <span className="inventoryitem__title2">ORBS DESCRIPTION:</span>
-                <p className="inventoryitem__text2">
-                  {inventoryItemData.description}
-                </p>
+                <p className="inventoryitem__text2">{inventoryItemData.orbs}</p>
               </div>
               <div className="inventoryitem__category">
                 <span className="inventoryitem__title2">CATEGORY:</span>
@@ -104,9 +100,7 @@ function InventoryItemPage() {
               </div>
               <div className="inventoryitem__warehouse">
                 <span className="inventoryitem__title2">FARMHOUSE:</span>
-                <p className="inventoryitem__text2">
-                  {parentData.warehouse_name}
-                </p>
+                <p className="inventoryitem__text2">{parentData.farmhouse}</p>
               </div>
             </div>
           </div>
