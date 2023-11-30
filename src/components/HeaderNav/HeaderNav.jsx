@@ -14,6 +14,9 @@ function HeaderNav() {
           <div className="header__option">My Farm</div>
         </NavLink>
         <NavLink className="header__option" to={"/inventory"}>
+          <div className="header__option">My Orbs</div>
+        </NavLink>
+        <NavLink className="header__option" to={"/Orbs"}>
           <div className="header__option">OrganicOrbs</div>
         </NavLink>
         <NavLink className="header__option" to={"/Orbs"}>

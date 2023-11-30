@@ -31,6 +31,8 @@
   }
 
   &__section {
+    gap: 1rem;
+    margin: 1rem;
     @include tablet {
       display: flex;
       justify-content: space-around;
@@ -56,6 +58,11 @@
       line-height: 18px;
     }
   }
+}
+.footer__class2 {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
 }
 .form {
   &__section {

@@ -7,9 +7,9 @@
 }
 
 .herobanner {
-  background-image: url(../../assets/Images/pureconnect_herobanner.jpg);
+  background-image: url(../../assets/Images/pureconnect_herobanner2.webp);
   background-position: center;
-  height: 20rem;
+  height: 45rem;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -18,15 +18,16 @@
 .herobanner__divider2,
 .herobanner__divider3 {
   height: 1px;
-  background-color: #bdc5d5;
+  background-color: whitesmoke;
   position: relative;
   margin-bottom: 1rem;
 }
 
 .herobaner {
-  background-color: #e1e1e1;
+  background-color: whitesmoke;
   padding: 1rem;
   width: 100%;
+  text-align: center;
 
   &__heading {
     font-size: 24px;
@@ -50,12 +51,17 @@
 }
 
 .herosection {
-  background-color: #e1e1e1;
+  background-color: whitesmoke;
   padding: 1rem;
   width: 100%;
   display: flex;
 
-  &__heading {
+  &__heading1 {
+    font-size: 24px;
+    line-height: 2;
+    font-weight: bold;
+  }
+  &__heading2 {
     font-size: 24px;
     line-height: 2;
     font-weight: bold;
@@ -63,30 +69,28 @@
   &__category {
     @include tablet {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       gap: 1.5rem;
       padding-left: 1rem;
     }
-    &__btn,
-    &__btn1 {
-      margin: 10px auto;
-      background-color: black;
-      padding: 1rem;
-      width: 90%;
-      border-radius: 4px;
-      border: none;
+    button {
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-top: 16px;
+      padding: 8px 16px 8px 16px;
+      border-radius: 20px;
+      background-color: brown;
+      border-color: brown;
+      border-style: none;
       color: white;
-      font-size: 1rem;
-
-      @include tablet {
-        width: 30%;
-        margin: 1rem 2rem;
-      }
     }
-    img {
+    .herosection__images {
       width: 100%;
       @include tablet {
-        width: 30%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
       }
     }
   }

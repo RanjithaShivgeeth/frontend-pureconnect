@@ -13,24 +13,32 @@ function OrbsDisplay({ selectedVideos }) {
           <div className="videoplayer">
             <div className="videoplayer__detail">
               <p className="videoplayer__date">{selectedVideos.channel}</p>
-              <p className="videoplayer__date--bydate">
+              {/* <p className="videoplayer__date--bydate">
                 {selectedVideos.timestamp}
-              </p>
+              </p> */}
             </div>
 
             <div className="video__Like">
               <p className="video__view">
-                <img
-                  src={`${process.env.REACT_APP_API_URL}/${selectedVideos.views}`}
+                {selectedVideos.views}
+                {/* <img
+                  src={`{viewicon}/${selectedVideos.views}`}
                   alt={selectedVideos.views}
+                /> */}
+                <img
+                  className="video__view--viewicon"
+                  src={viewicon}
+                  alt="viewicon"
                 />
               </p>
 
               <p className="video__Like--like">
-                <img
-                  src={`${process.env.REACT_APP_API_URL}/${selectedVideos.likes}`}
+                {selectedVideos.likes}
+                {/* <img
+                  src={`{likeicon}/${selectedVideos.likes}`}
                   alt={selectedVideos.likes}
-                />
+                /> */}
+                <img className="likeicon" src={likeicon} alt="likeicon" />
               </p>
             </div>
           </div>
@@ -70,9 +78,9 @@ function OrbsDisplay({ selectedVideos }) {
               <div className="commentSection__avatar"></div>
               <div className="commentSection__comments">
                 <div className="commentSection__namedate">
-                  <p>Name: {comment.name}</p>
+                  <p>{comment.name}</p>
 
-                  <p> {comment.timestamp}</p>
+                  {/* <p> {comment.timestamp}</p> */}
                 </div>
                 <div>
                   <p>{comment.comment}</p>

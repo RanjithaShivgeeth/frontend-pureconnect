@@ -20,6 +20,9 @@ function OrbsHeader() {
             <div className="header__option">My Farm</div>
           </NavLink>
           <NavLink className="header__option" to={"/inventory"}>
+            <div className="header__option">My Orbs</div>
+          </NavLink>
+          <NavLink className="header__option" to={"/Orbs"}>
             <div className="header__option">OrganicOrbs</div>
           </NavLink>
           <NavLink className="header__option" to={"/Orbs"}>
@@ -37,7 +40,7 @@ function OrbsHeader() {
               required
             />
 
-            <img src={icons} className="Web__searchBar--icons" alt="icons" />
+            {/* <img src={icons} className="Web__searchBar--icons" alt="icons" /> */}
           </div>
 
           <button
@@ -50,16 +53,16 @@ function OrbsHeader() {
             </nav>
           </button>
 
-          <img className="Web__searchBar--image" src={image} alt="image" />
+          {/* <img className="Web__searchBar--image" src={image} alt="image" /> */}
         </div>
 
         <div className="Web__button">
           <button className="Web__uploadButton">UPLOAD</button>
-          <img
+          {/* <img
             className="Web__mobile--uploadButtonicon"
             src={button}
             alt="upload-icon"
-          />
+          /> */}
         </div>
       </div>
     </>

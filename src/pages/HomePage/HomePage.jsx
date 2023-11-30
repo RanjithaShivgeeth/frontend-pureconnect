@@ -55,28 +55,35 @@ function HomePage() {
         <div className="herobanner__divider2"></div>
 
         <div className="herosection">
-          <h2 className="herosection__heading">Organic Orbs</h2>
-          <h2 className="herosection__heading">Conventional Orbs</h2>
-        </div>
-
-        <div className="herosection__category">
-          <img className="herosection__images" src={organic} alt="Categories" />
-          <button className="herosection__btn" type="submit">
-            SHOP NOW
-          </button>
-          <img
-            className="herosection__images"
-            src={conventional}
-            alt="Categories"
-          />
-          <button className="herosection__btn1" type="submit">
-            SHOP NOW
-          </button>
+          <div className="herosection__category">
+            <div className="herosection__class1">
+              <h2 className="herosection__heading1">Organic Orbs</h2>
+              <img
+                className="herosection__images"
+                src={organic}
+                alt="Categories"
+              />
+              <button className="herosection__btn" type="submit">
+                SHOP NOW
+              </button>
+            </div>
+            <div className="herosection__class2">
+              <h2 className="herosection__heading2">Conventional Orbs</h2>
+              <img
+                className="herosection__images"
+                src={conventional}
+                alt="Categories"
+              />
+              <button className="herosection__btn1" type="submit">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
         </div>
         <div className="herobanner__divider3"></div>
-
-        <Footer />
       </div>
+
+      <Footer />
     </>
   );
 }

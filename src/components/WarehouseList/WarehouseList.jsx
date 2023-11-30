@@ -122,7 +122,7 @@ function WarehouseList({ sortOrder, sortColumn }) {
                   className="warehouse__deleteicon"
                 ></img>
               </button>
-              {/* <Link
+              <Link
                 className="warehouse__button"
                 to={"/warehouses/edit/" + warehouse.id}
               >
@@ -131,7 +131,7 @@ function WarehouseList({ sortOrder, sortColumn }) {
                   alt="edit icon"
                   className="warehouse__editicon"
                 ></img>
-              </Link> */}
+              </Link>
             </div>
           </li>
         ))}

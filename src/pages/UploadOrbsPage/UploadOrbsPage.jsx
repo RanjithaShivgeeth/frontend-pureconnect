@@ -1,5 +1,5 @@
 import OrbsHeader from "../../components/OrbsHeader/OrbsHeader";
-import thumbnail from "../../assets/Images/Upload-video-preview.jpg";
+import fruits from "../../assets/Images/fruits.jpg";
 import publish from "../../assets/Icons/publish.svg";
 import "../UploadOrbsPage/UploadOrbsPage.scss";
 import { useNavigate } from "react-router-dom";
@@ -43,7 +43,7 @@ function UploadOrbsPage() {
         <div className="Uploadimage">
           <div className="Upload">
             <p className="Upload__title">ORBS THUMBNAIL</p>
-            <img className="Upload__photo" src={thumbnail} alt="photo" />
+            <img className="Upload__photo" src={fruits} alt="photo" />
           </div>
           <div className="Upload__section">
             <form onSubmit={handleSubmit} action="">
@@ -73,11 +73,11 @@ function UploadOrbsPage() {
                   CANCEL
                 </a>
                 <button className="Upload__btn" type="submit">
-                  <img
+                  {/* <img
                     className="Upload__btn--icon"
                     src={publish}
                     alt="publish-icon"
-                  />
+                  /> */}
                   PUBLISH
                 </button>
                 <a href="/" className="cancelButton">

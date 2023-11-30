@@ -7,8 +7,8 @@ import comment from "../../assets/Icons/add_comment.svg";
 function Footer() {
   return (
     <div className="footer">
-      <div class="footer__section">
-        <div class="footer__section4">
+      <div className="footer__section">
+        <div className="footer__section4">
           <p className="heading">Track Your Order</p>
           <form className="form" action="">
             <div className="form__section">
@@ -21,18 +21,19 @@ function Footer() {
 
                 <div className="form__section3">
                   <button className="form__section3--btn">Submit</button>
-                  <img
+                  {/* <img
                     className="form__section3--icon"
                     src={comment}
                     alt="comment-icon"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
           </form>
-          <div class="footer__headingicon">
-            <h2 class="footer__header">Follow Us</h2>
-            <div class="footer__logo">
+
+          <div className="footer__headingicon">
+            <h2 className="footer__header">Follow Us</h2>
+            <div className="footer__logo">
               <img
                 src={twitterIcon}
                 alt="twitter icon"
@@ -50,7 +51,9 @@ function Footer() {
               />
             </div>
           </div>
-          <div class="footer__section1">
+        </div>
+        <div className="footer__class2">
+          <div className="footer__section1">
             <h3>Top Categories </h3>
             <p>Whole Grain</p>
             <p>Vegetables</p>
@@ -59,14 +62,14 @@ function Footer() {
             <p>Timber</p>
             <p>Fruits</p>
           </div>
-          <div class="footer__section2">
+          <div className="footer__section2">
             <h3>Pure Connect</h3>
             <p>About PURECONNECT</p>
             <p>Find Us</p>
             <p>Terms & Conditions</p>
             <p>Privacy Policy</p>
           </div>
-          <div class="footer__section3">
+          <div className="footer__section3">
             <h3>Customer Service</h3>
             <p>Help & FAQs</p>
             <p>Contact Us</p>
@@ -75,6 +78,7 @@ function Footer() {
           </div>
         </div>
       </div>
+
       <p className="footer-copyright">
         © PureConnect Inc. All Rights Reserved.
       </p>
